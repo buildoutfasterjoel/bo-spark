@@ -37,7 +37,7 @@ async function main() {
     message: "What are we calling this prototype?",
     placeholder: "my-prototype",
     validate: (v) => {
-      if (!v.trim()) return "Project name is required";
+      if (!v?.trim()) return "Project name is required";
       if (!/^[a-z0-9-]+$/.test(v))
         return "Lowercase letters, numbers and hyphens only";
       return undefined;
@@ -66,13 +66,13 @@ async function main() {
 
   const githubToken = await p.password({
     message: "GitHub Packages token",
-    validate: (v) => (!v.trim() ? "Token is required" : undefined),
+    validate: (v) => (!v?.trim() ? "Token is required" : undefined),
   });
   if (p.isCancel(githubToken)) cancel();
 
   const fontawesomeToken = await p.password({
     message: "Font Awesome Pro token",
-    validate: (v) => (!v.trim() ? "Token is required" : undefined),
+    validate: (v) => (!v?.trim() ? "Token is required" : undefined),
   });
   if (p.isCancel(fontawesomeToken)) cancel();
 
