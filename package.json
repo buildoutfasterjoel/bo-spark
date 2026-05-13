@@ -2,10 +2,11 @@
   "name": "bo-spark",
   "version": "0.1.0",
   "description": "Spin up a Buildout prototype in seconds",
-  "bin": "./src/index.ts",
+  "bin": {
+    "@buildoutfasterjoel/bo-spark": "./src/index.ts"
+  },
   "scripts": {
-    "build": "bun build src/index.ts --outfile dist/index.js --target bun",
-    "prepare": "bun run build"
+    "build": "bun build src/index.ts --outfile dist/index.js --target bun"
   },
   "dependencies": {
     "@clack/prompts": "^1.4.0"
