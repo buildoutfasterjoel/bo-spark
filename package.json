@@ -1,8 +1,10 @@
 {
   "name": "@buildoutfasterjoel/bo-spark",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Spin up a Buildout prototype in seconds",
-  "bin": "./src/index.ts",
+  "bin": {
+    "bo-spark": "./src/index.ts"
+  },
   "scripts": {
     "build": "bun build src/index.ts --outfile dist/index.js --target bun"
   },
