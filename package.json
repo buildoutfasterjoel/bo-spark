@@ -1,0 +1,14 @@
+{
+  "name": "bo-spark",
+  "version": "0.1.0",
+  "description": "Spin up a Buildout prototype in seconds",
+  "bin": {
+    "bo-spark": "./src/index.ts"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.9.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}
