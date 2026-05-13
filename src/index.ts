@@ -97,7 +97,7 @@ async function main() {
   // ── Write .env ────────────────────────────────────────────────
   spinner.start("Writing .env…");
   const env = [
-    `GITHUB_PACKAGES_TOKEN=${githubToken}`,
+    `GITHUB_TOKEN=${githubToken}`,
     `FONTAWESOME_PRO_TOKEN=${fontawesomeToken}`,
     "",
   ].join("\n");
