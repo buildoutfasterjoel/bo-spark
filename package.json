@@ -2,6 +2,7 @@
   "name": "bo-spark",
   "version": "0.1.0",
   "description": "Spin up a Buildout prototype in seconds",
+  "main": "dist/index.js",
   "bin": {
     "bo-spark": "./dist/index.js"
   },
