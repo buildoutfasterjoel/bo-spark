@@ -1,6 +1,6 @@
 {
   "name": "@buildoutfasterjoel/bo-spark",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Spin up a Buildout prototype in seconds",
   "bin": {
     "bo-spark": "./src/index.ts"
